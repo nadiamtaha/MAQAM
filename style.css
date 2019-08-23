@@ -1400,12 +1400,10 @@ a.scrolldown {
 .contact-form input[type="password"],
 .contact-form textarea {
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 100%;
     display: block;
-    border: none;
-    border-bottom: 1px solid #e8e8e8;
-    outline: none;
+    border-radius: 6px
 }
 
 .contact-form .form-double input[type="text"],

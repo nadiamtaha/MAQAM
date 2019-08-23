@@ -97,16 +97,39 @@
                         <div class="col-xs-12">
                             <div class="contact-form">
                                 <form action="process.php" id="contact-form" method="post">
-                                    <div class="form-double">
-                                        <input  type="text" id="form-name" name="form-name" placeholder="الاسم الاخير" required="required">
-                                        <input type="text" id="form-name" name="form-name" placeholder="الاسم الاول" required="required">
+                                    <div class="form-group col-sm-6">
+                                        <label>الاسم الاخير</label>
+                                        <input  class="form-control"  type="text" id="form-name" name="form-name" placeholder="الاسم الاخير" required="required">
+                                        <span class="text-danger">الاسم الاخير غير صحيح</span>
                                     </div>
-                                    <div class="form-double">
-                                        <input type="email" name="form-email" name="email" id="form-email" placeholder="البريد الالكتروني" required="required">
-                                        <input type="number" placeholder="رقم التليفون">
+                                    <div class="form-group col-sm-6">
+                                            <label>الاسم الاول</label>
+
+                                        <input class="form-control "  type="text" id="form-name" name="form-name" placeholder="الاسم الاول" required="required">
+                                        <span class="text-danger">الاسم الاول غير صحيح</span>
 
                                     </div>
-                                    <textarea name="form-message" id="message" id="form-message" rows="5" required="required" placeholder="العنوان"></textarea>
+                                    
+                                    <div class="form-group col-sm-6">
+                                            <label>البريد الالكتروني</label>
+
+                                            <input class="form-control "  type="email" name="form-email" name="email" id="form-email" placeholder="البريد الالكتروني" required="required">
+                                            <span class="text-danger">البريد الالكتروني غير صحيح</span>
+
+                                        </div>
+                                     <div class="form-group col-sm-6">
+                                            <label>رقم التليفون</label>
+
+                                            <input class="form-control "  type="number" placeholder="رقم التليفون">
+                                            <span class="text-danger">رقم التليفون غير صحيح</span>
+
+                                        </div>
+                                        <div class="form-group col-sm-12">
+                                                <label>العنوان بالتفصيل</label>
+
+                                                <textarea class="form-control "  name="form-message" id="message" id="form-message" rows="5" required="required" placeholder="العنوان"></textarea>
+
+</div>
                                     <button class="bttn bttn-primary">ارسال</button>
                                 </form>
                             </div>
